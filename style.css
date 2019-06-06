@@ -137,8 +137,14 @@ height: 100vh;
   margin-top: 50px;
   margin-bottom: 60px;
 }
+
+#trecideo h2, #sestideo h2 {
+  font-size: 1.7em;
+}
+
 #prvideo p {
   margin-bottom: 6%;
+  font-size: 1.2em;
 }
 #prvideo a, #drugideo a, #cetvrtideo a, #petideo a {
   color: white;
@@ -169,6 +175,9 @@ height: 100vh;
   color: #7e8890;
   text-decoration: none;
   margin-bottom: 60px;
+}
+#drugideo a {
+  font-size: 1em;
 }
 #drugideo .know {
   padding: 18% 7%;
@@ -355,10 +364,11 @@ input {
   margin-bottom: 6%;
 }
 input, textarea {
-  padding: 6px;
+  padding: 12px;
   background-color: inherit;
   border: 1px solid white;
-  color: #7e8890;;
+  color: #7e8890;
+  font-size: 1em;
 }
 form button {
   margin: 20px auto;
@@ -382,7 +392,7 @@ footer {
 }
 footer a {
   color: #8c8989;
-  margin-right: 3px;
+  margin-right: 5px;
   text-decoration: none;
 }
 footer a:hover, .dno p a:hover {
@@ -420,7 +430,7 @@ padding: 7px 11px;
 span a:hover {
   background-color: #f2ab37;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 786px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -430,7 +440,7 @@ span a:hover {
   }
 }
 
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 786px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -450,7 +460,7 @@ span a:hover {
     text-align: left;
   }
 }
-@media (max-width: 748px){
+@media (max-width: 786px){
   .topnav a {
     padding: 20px 16px;
   }
@@ -481,20 +491,25 @@ span a:hover {
     width: 70%;
   }
   #prvideo h1 {
-    font-size: 1.7em;
+    font-size: 2em;
   }
   #prvideo h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   #prvideo a, #drugideo a, #cetvrtideo a, #petideo a {
-    font-size: 1em;
+    font-size: 1.1em;
   }
-  #drugideo p, #cetvrtideo p, #petideo p {
-    font-size: 1em;
-  }
+  /*#prvideo p, #drugideo p, #cetvrtideo p, #petideo p {
+    font-size: 1.2em;
+  }*/
+
+#prvideo p {
+  margin-bottom: 10%;
+}
 
   #str1, #str2, #str3, #str4, #str5, #str6, #str7, #str8, #str9, #str10, #str11, #str12{
-    width: 39%;
+    width: 40%;
+    margin: 4%;
   }
 
   #drugideo, #trecideo, #cetvrtideo, #petideo, #sestideo {
@@ -512,7 +527,43 @@ span a:hover {
     width: 100%;
     background-position: top;
   }
+
+  input {
+    margin-bottom: 12%;
+  }
+  form button {
+    margin: 30px auto;
+  }
+
 footer {
   flex-direction: column;
 }
+footer a {
+  margin-right: 14px;
+}
+}
+
+@media (max-width: 550px){
+  #prvideo div {
+    width: 90%;
+  }
+  #prvideo p {
+    margin-bottom: 16%;
+  }
+  .tekst2, .tekst3, .tekst4, .tekst5, .tekst6 {
+    width: 99%;
+  }
+}
+
+@media (max-width: 500px){
+  #str1, #str2, #str3, #str4, #str5, #str6, #str7, #str8, #str9, #str10, #str11, #str12{
+    width: 60%;
+    margin: 4%;
+  }
+}
+
+@media (max-width: 310px) {
+  #prvideo a, #drugideo a, #cetvrtideo a, #petideo a {
+    font-size: 1em;
+  }
 }
